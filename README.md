@@ -47,4 +47,3 @@ ruyle
  and further filter on the dictionary
 - [ ]  [optimization] Recommendations based on word components && init world
 - [ ]  [analyze] Can guess 6 times to cover the solution space?
-# wordle-crash

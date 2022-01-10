@@ -60,20 +60,20 @@ if __name__ == '__main__':
     clean_data('./words.txt')
     init_file()
     # guess 1
-    resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
+    resp = {"f": -1, "i": 1, "r": 1, "e": -1, "d": 1}
     filter_word(resp)
     # guess 2
-    resp = {"f": -1, "i": -1, "r": 1, "e": 1, "d": -1}
+    resp = {"d": 0, "a": -1, "i": 0, "r": 1, "y": -1}
     filter_word(resp)
-    # guess 3
-    resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
-    filter_word(resp)
-    # guess 4
-    resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
-    filter_word(resp)
-    # guess 5
-    resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
-    filter_word(resp)
-    # guess 6
-    resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
-    filter_word(resp)
+    # # guess 3
+    # resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
+    # filter_word(resp)
+    # # guess 4
+    # resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
+    # filter_word(resp)
+    # # guess 5
+    # resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
+    # filter_word(resp)
+    # # guess 6
+    # resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
+    # filter_word(resp)
