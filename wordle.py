@@ -52,7 +52,7 @@ def filter_word(response: dict, fp='./words-temp.txt'):
         if v == -1:
             words = filter(lambda x: k not in x, words)
         with open(fp, 'w') as f:
-            f.writelines(list(words))
+            f.writelines(sorted(list(words), key=lambda x: -len(set(x))))
     return True
 
 
