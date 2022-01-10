@@ -23,20 +23,15 @@ python wordle.py
 
 # example
 ```python
-resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
+resp1 = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
+resp2 = {"f": -1, "i": -1, "r": 1, "e": 1, "d": -1}
 ```
 ```txt
-lummy
-lumpy
-luray
-lurky
-lurry
-lusby
-lushy
-lusky
-lusty
-mucky
-...
+query
+rebuy
+rubye
+ruely
+ruyle
 ```
 
 ## todo

@@ -63,7 +63,7 @@ if __name__ == '__main__':
     resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
     filter_word(resp)
     # guess 2
-    resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
+    resp = {"f": -1, "i": -1, "r": 1, "e": 1, "d": -1}
     filter_word(resp)
     # guess 3
     resp = {"y": 1, "o": -1, "u": 1, "n": -1, "g": -1}
