@@ -1,3 +1,5 @@
 .idea/
+__pycache__/
+tmp/
 words-l5.txt
 words-temp.txt
