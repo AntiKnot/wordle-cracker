@@ -1,7 +1,7 @@
 from typing import List
 
 
-def load_words(fp) -> List[str]:
+def load_words(fp: str) -> List:
     with open(fp) as f:
         words: List[str] = f.readlines()
     return [w.rstrip('\n') for w in words]

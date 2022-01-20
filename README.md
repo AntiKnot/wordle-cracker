@@ -1,6 +1,9 @@
-# wordle-crash
+# wordle-cracker
+wordle-cracker: guess answer  
+
+support
 - [wordle: a daily world game](https://www.powerlanguage.co.uk/wordle/)
-- wordle-crash: guess answer  
+- [pinyincaichengyu](https://pinyincaichengyu.com/)
 
 
 ## usage
