@@ -38,9 +38,9 @@ def save_chengyu_pinyin(lst_cy, fp="chengyu-pinyin-temp.txt"):
         f.writelines([cy.to_string() for cy in lst_cy])
 
 
-def filter_chengyu_pinyin(response, fp="chengyu-pinyin-temp.txt"):
+def filter_chengyu_pinyin(response: List[tuple], fp="chengyu-pinyin-temp.txt"):
     words = load_chengyu_pinyin(fp)
-    for i, (k, v) in enumerate(response.items()):
+    for i, (k, v) in enumerate(response):
         if v == 0:
             res = []
             for word in words:
@@ -115,10 +115,12 @@ if __name__ == '__main__':
     # init_data()
     init_file()
     lst_cy = load_chengyu_pinyin()
-    lst_cy = struct_filter("3434", lst_cy)
+    lst_cy = struct_filter("3323", lst_cy)
     save_chengyu_pinyin(lst_cy)
     filter_chengyu_pinyin(
-        {"l": 1, "a": 0, "e": -1, "y": -1, "o": 1, "n": 1, "g": 1, "z": -1,
-         "h": 1, "i": 1, "q": -1, "u": 1})
-    filter_chengyu_pinyin(
-        {"w": -1, "e": -1, "i": 1, "m": -1, "y": -1, "a": 0, "o": 1})
+        [
+            ("y", -1), ("o", -1), ("u", -1),
+            ("s", -1), ("h", 1), ("i", 1),
+            ("y", -1), ("i", -1),
+            ("l", -1), ("a", 1), ("i", 0)
+        ])
